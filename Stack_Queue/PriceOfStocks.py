@@ -12,7 +12,7 @@ def solution(prices):
         count = 0
         for p in prices_queue:
             count += 1
-            if (p < price) | (count == length):
+            if (p < price) or (count == length):
                 answer.append(count)
                 break
     answer.append(0)
